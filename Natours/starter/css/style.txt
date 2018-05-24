@@ -157,7 +157,7 @@ body {
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem;
+  font-size: $default-font-size;
 }
 
 .btn:hover {
