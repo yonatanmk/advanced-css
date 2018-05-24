@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* force box-sizing to be inherited from body. It normally is not */
+}
+
+html {
+  // this defines what 1 rem is
+  font-size: 62.5%;
+  /* now 1 rem = 62.5% = 10px */
+  /* cant use rem below ie9 */
+}
+
+body {
+  padding: 3rem;
+  box-sizing: border-box;
+}
