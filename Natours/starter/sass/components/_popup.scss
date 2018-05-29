@@ -28,6 +28,15 @@
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include respond(tab-land) {
+      width: 100%;
+      display: block;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__right {
@@ -36,11 +45,21 @@
     // can only use vertical-align with table;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+      display: block;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(tab-land) {
+      display: inline-block;
+      width: 49.8%;
+    }
   }
 
   &__text {
