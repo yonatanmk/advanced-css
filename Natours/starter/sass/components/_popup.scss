@@ -29,9 +29,10 @@
     width: 33.333333%;
     display: table-cell;
 
-    @include respond(tab-land) {
+    @include respond(popup) {
       width: 100%;
       display: block;
+      @include clearfix;
     }
 
     @include respond(phone) {
@@ -46,7 +47,7 @@
     vertical-align: middle;
     padding: 3rem 5rem;
 
-    @include respond(tab-land) {
+    @include respond(popup) {
       width: 100%;
       display: block;
     }
@@ -56,9 +57,9 @@
     display: block;
     width: 100%;
 
-    @include respond(tab-land) {
-      display: inline-block;
-      width: 49.8%;
+    @include respond(popup) {
+      float: left;
+      width: 50%;
     }
   }
 
