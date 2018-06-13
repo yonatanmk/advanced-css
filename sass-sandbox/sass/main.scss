@@ -1,3 +1,163 @@
-.red {
-  color: red;
+body {
+  padding: 15px;
+}
+
+.pseudo-element-example {
+
+  width: 200px;
+  height: 200px;
+  background: #f06d06;
+  position: relative;
+  border: 5px solid blue;
+  margin: 20px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    background: red;
+    z-index: -1;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    right: -25px;
+    bottom: -25px;
+    background: green;
+    z-index: -2;
+  }
+}
+
+.double-border-button {
+  position: relative;
+  background: #f06d06;
+  padding: 20px;
+  font-size: 15px;
+  font-family: arial;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #555;
+  text-shadow: 0px .25px white;
+  background-image: linear-gradient(
+    to bottom,
+    #e2e2e2,
+    #adadad);
+  border-radius: 10px;
+  // border: 5px solid blue;
+  margin: 20px;
+
+  box-shadow:
+  0px 2px 8px #000000bd,
+  0 0 0 10px #CBCBCB,
+  0 0 0 12px #FFFFFF,
+  0 0 0 14px #666666,
+  10px 10px 8px #888888;
+
+  // &:after {
+  //   content: '';
+  //   position: absolute;
+  //   top: -8px;
+  //   left: -8px;
+  //   right: -8px;
+  //   bottom: -8px;
+  //   background: #CBCBCB;
+  //   border-radius: 15px;
+  //   box-shadow:
+  //   0 0 0 10px hsl(0, 0%, 80%),
+  //   0 0 0 15px hsl(0, 0%, 90%);
+  //   z-index: -1;
+  // }
+}
+
+.block {
+  display: block;
+  background-color: red;
+  height: 30px;
+  // width: 30px;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 5px;
+}
+
+.inline {
+  display: inline;
+  background-color: red;
+  height: 30px;
+  // width: 30px;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 5px;
+}
+
+.height {
+  height: 30px;
+}
+
+.parent {
+  padding: 5px;
+  background-color: red;
+}
+
+.parent .direct-descendant {
+  background-color: purple;
+}
+
+.parent .non-direct-descendant {
+  background-color: blue;
+}
+
+.parent >> .non-direct-descendant2 {
+  // rare browser support
+  background-color: cyan;
+}
+
+.parent > .direct-child {
+  background-color: orange;
+}
+
+.parent > .non-direct-child {
+  background-color: salmon;
+}
+
+.sibling ~ .sibling2 {
+  background-color: green;
+}
+
+.sibling + .sibling2 {
+  background-color: salmon;
+}
+
+.test {
+  background-color: red;
+  width: 40px;
+  padding: 20px;
+}
+
+.test2 {
+  background-color: red;
+  width: 40px;
+}
+
+.test3 {
+  box-sizing: border-box;
+  background-color: red;
+  width: 40px;
+  padding: 20px;
+}
+
+.test4 {
+  box-sizing: border-box;
+  background-color: red;
+  width: 40px;
+}
+
+.maxwidth {
+  max-width: 500px;
+  background-color: red;
 }

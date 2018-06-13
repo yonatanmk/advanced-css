@@ -1,18 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/icon-font.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+      <link rel="stylesheet" href="css/icon-font.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-        <title>Sass Boilerplate</title>
-    </head>
-    <body>
-      <p class="red">Hello World</p>
-    </body>
+      <title>Sass Boilerplate</title>
+  </head>
+  <body>
+    <div class="pseudo-element-example"></div>
+
+    <div style="margin-top: 80px">
+      <a class="double-border-button">Checkout</a>
+    </div>
+
+    <div style="margin-top: 80px">
+      <div class='block' />
+    </div>
+
+    <div style="margin-top: 80px">
+      <div class='inline' />
+    </div>
+
+    <div class="parent" style="margin-top: 80px">
+      <div class="direct-descendant height"></div>
+      <div>
+        <div>
+          <div class="non-direct-descendant height"></div>
+          <div class="non-direct-descendant2 height"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parent" style="margin-top: 80px">
+      <div class="direct-child height"></div>
+      <div>
+        <div>
+          <div class="non-direct-child height"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parent" style="margin-top: 80px">
+      <div class="sibling height"></div>
+      <div class="sibling2 height"></div>
+      <div class="sibling2 height"></div>
+    </div>
+
+    <div style="margin-top: 80px">
+      <div class='test height' />
+    </div>
+
+    <div style="margin-top: 80px">
+      <div class='test2 height' />
+    </div>
+
+    <div style="margin-top: 80px">
+      <div class='test3 height' />
+    </div>
+
+    <div style="margin-top: 80px">
+      <div class='test4 height' />
+    </div>
+
+    <div style="margin-top: 80px">
+      <div class='maxwidth height' />
+    </div>
+  </body>
 </html>
