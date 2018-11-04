@@ -139,6 +139,11 @@
     &:not(:last-child) {
       margin-bottom: .5rem;
     }
+
+    // &:not(:first-child):hover {
+    //   background-color: blue;
+    //
+    // }
   }
 
   &__item:hover::before,
